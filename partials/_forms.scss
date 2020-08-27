@@ -1,0 +1,28 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 35%;
+        flex-wrap: wrap;
+
+    input {
+        width: 50%;
+    }
+
+
+    textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    }
+
+}
+
+

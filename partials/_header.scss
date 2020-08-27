@@ -1,0 +1,46 @@
+.home {
+
+    .icon {
+        color: #ffffff;
+    }
+
+
+
+    li {
+        color: #ffffff;
+    }
+
+    header {
+        background: url(../planted-final-assets/home-image-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        background-position: center;
+    }
+}
+
+h1 {
+    font-size: 16.6rem;
+    color: #ffffff;
+    z-index: 10;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.headerContent {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+
+}
+
+.imgContainer {
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    max-width: 700px;
+
+}
