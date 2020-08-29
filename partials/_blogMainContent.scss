@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    
+    .socialContact {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 5px;
+
+        p {
+            margin: 0;
+        }
+    }
+    
+    .formContainer {
+        display: flex;
+    }
+}

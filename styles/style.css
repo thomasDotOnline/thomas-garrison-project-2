@@ -370,6 +370,24 @@ footer {
   text-align: center;
 }
 
+.contact {
+  display: flex;
+}
+
+.contact .socialContact {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 5px;
+}
+
+.contact .socialContact p {
+  margin: 0;
+}
+
+.contact .formContainer {
+  display: flex;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -381,7 +399,6 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  width: 35%;
   flex-wrap: wrap;
 }
 
