@@ -5,23 +5,53 @@
 }
 
 
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
+}
+
+a:hover,
+a:focus {
+    color: #f8e71c;
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+    padding: 25px;
+
 }
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0;
+    padding: 7px 0;
 }
 
 img {
     width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.icon {
+    text-transform: capitalize;
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+li {
+    margin-top: 10px;
+
 }
