@@ -1,3 +1,4 @@
+// about start
 .about {
     display: flex;
     justify-content: center;
@@ -18,14 +19,26 @@
             padding-bottom: 50px;
         }
 
-        a {
-            color: black;
-        }
-
 
     }
 }
 
+// about end
+
+// my beautiful button :) nothing wrong start
+.findMore {
+    margin: 25px 0 25px 15px;
+
+    a {
+        background-color: #0e902d;
+        padding: 10px 15px;
+    }
+}
+
+// my beautiful button :) nothing wrong ... move along. end/ i actually don't think there is anything wrong, i recognise that this is suspicious but i think all is well.
+
+
+// grid cards section 2 start 
 .fancyCards {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -72,12 +85,22 @@
     }
 }
 
-// 
+// grid cards section 2 end
+
+// site overflow grid start
 .siteOverview {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2;
     padding: 50px 0;
+
+    li {
+        i {
+            padding: 12px;
+            background-color: rgba(248, 231, 28, 1);
+            border-radius: 50%;
+        }
+    }
 
 
     h3 {
@@ -92,6 +115,9 @@
     }
 }
 
+// site overflow grid start
+
+// founder section start
 .founder {
     display: flex;
     height: 100%;
@@ -101,11 +127,12 @@
     p {
         margin-left: 20px;
     }
-
-
 }
 
+// founder section start
 
+
+// gallery start
 .gallery {
     background-color: white;
 
@@ -114,11 +141,73 @@
         flex-wrap: wrap;
 
         li {
-                margin: 15px;
+            margin: 15px;
 
             width: calc(33.333% - 30px);
+        }
+    }
+}
+
+// gallery end
+
+footer {
+    background-color: #2c2c2c;
+    padding: 10px 0;
+}
+
+
+
+@media (max-width:700px) {
+
+    .fancyCards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .gridItem1,
+        .gridItem2 {
+            text-align: center;
+            padding: 50px 0;
+
+            p {
+                margin: 50px auto;
+            }
+
+            .findMore {
+                padding-bottom: 50px;
+            }
+        }
+
+        .gridItem1 img {
+            order: 1;
+        }
+    }
+
+
+    .siteOverview {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+
+    .founder {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .gallery {
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+            }
         }
 
 
     }
+
 }

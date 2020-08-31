@@ -26,7 +26,6 @@
     
     .contactContainer {
         display: flex;        
-        
         .socialContact {
             display: flex;
             flex-wrap: wrap;
@@ -59,9 +58,26 @@
         width: 75%;
         box-shadow: -20px 15px 0px 0px rgba(248, 231, 28, 1);
     }
-
-    footer {
-        background-color: #2c2c2c;
-        padding: 10px 0;
-    }
 }
+
+
+
+@media(max-width: 700px) {
+
+
+        .contactContainer {
+            flex-wrap: wrap;
+            width: 100%;
+
+            .socialContact {
+                margin: 0 auto;
+            }
+
+            .formContainer {
+                bottom: 0;
+                margin: 25px 0;
+                width: 100%;
+                left: 0;
+            }
+        }
+    }

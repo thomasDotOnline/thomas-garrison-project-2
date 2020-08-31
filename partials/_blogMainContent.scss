@@ -1,5 +1,15 @@
 .blog {
 
+    // global page styles start
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 6fr;
+    }
+    // global page styles start
+
+
+    // header start
+
     nav {
         background-color: #2c2c2c;
     }
@@ -19,35 +29,51 @@
         }
     }
 
+    // header end
+
+
+    // sidebar start 
     .sidebar {
+
+        h3 {
+            text-transform: capitalize;
+        }
+
+        a {
+            color: #0e902d;
+            display: block;
+        }
+
+        .sidebarContent {
+
+            background-color: white;
+            margin-top: -25px;
+            padding: 50px 25px 25px 25px;
+        }
 
 
 
         ul {
             flex-direction: column;
+            list-style-type: disc;
         }
     }
-
-
-    main {
-        display: grid;
-        grid-template-columns: 2fr 1fr 6fr;
+    .blogImg {
+        position: relative;
+        left: 25px;
+        bottom: 150px;
+        box-shadow: -25px 25px 0px 0px rgba(248, 231, 28, 1);
     }
+    // sidebar end
 
 
-
+    // blog start
     .blogContainer {
         display: flex;
         flex-direction: column;
         grid-column-start: 3;
-
-        .comments,
-        .blogPost {
-            margin-left: 25px;
-        }
-
-
-
+        
+        // article start
         .articleContent {
             border-left: 3px solid #f8e71c;
             border-bottom: 3px solid #f8e71c;
@@ -59,17 +85,14 @@
                 max-width: 800px;
             }
         }
+        // article end
 
 
-
-
-        .blogImg {
-            position: relative;
-            left: 25px;
-            bottom: 150px;
-            box-shadow: -25px 25px 0px 0px rgba(248, 231, 28, 1);
+        // comments start
+        .comments,
+        .blogPost {
+            margin-left: 25px;
         }
-
         .post {
             display: flex;
             padding: 25px 0;
@@ -84,8 +107,13 @@
                 margin: auto;
             }
         }
+        // comments end
 
 
+        
+
+
+        // form start
         form {
             padding: 50px 0;
 
@@ -102,7 +130,44 @@
             }
         }
     }
+    // form end
+
+}
 
 
 
+@media (max-width: 700px) {
+    .blog {
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5rem;
+        }
+
+        .sidebar {
+            padding: 0 0 250px 0;
+            display: block;
+        }
+
+        .blogContainer {
+            .blogImg {
+                left: 0;
+                bottom: 0;
+                box-shadow: 0px 25px 0px 0px rgba(248, 231, 28, 1);
+            }
+
+            .articleContent {
+                border: none;
+
+                .blogPost {
+                    padding-top: 25px;
+
+                }
+            }
+        }
+
+        .post {
+            margin-right: 15px;
+        }
+    }
 }
